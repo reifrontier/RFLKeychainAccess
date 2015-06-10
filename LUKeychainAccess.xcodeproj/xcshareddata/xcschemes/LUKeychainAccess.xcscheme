@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F8B3FC0B1B027CBA008AF919"
-               BuildableName = "LUKeychainAccess.framework"
-               BlueprintName = "LUKeychainAccess"
+               BuildableName = "RFLKeychainAccess.framework"
+               BlueprintName = "RFLKeychainAccess"
                ReferencedContainer = "container:LUKeychainAccess.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8B3FC0B1B027CBA008AF919"
-            BuildableName = "LUKeychainAccess.framework"
-            BlueprintName = "LUKeychainAccess"
+            BuildableName = "RFLKeychainAccess.framework"
+            BlueprintName = "RFLKeychainAccess"
             ReferencedContainer = "container:LUKeychainAccess.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8B3FC0B1B027CBA008AF919"
-            BuildableName = "LUKeychainAccess.framework"
-            BlueprintName = "LUKeychainAccess"
+            BuildableName = "RFLKeychainAccess.framework"
+            BlueprintName = "RFLKeychainAccess"
             ReferencedContainer = "container:LUKeychainAccess.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -94,8 +94,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8B3FC0B1B027CBA008AF919"
-            BuildableName = "LUKeychainAccess.framework"
-            BlueprintName = "LUKeychainAccess"
+            BuildableName = "RFLKeychainAccess.framework"
+            BlueprintName = "RFLKeychainAccess"
             ReferencedContainer = "container:LUKeychainAccess.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

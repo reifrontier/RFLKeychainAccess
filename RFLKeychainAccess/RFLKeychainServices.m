@@ -1,19 +1,28 @@
 #import <Security/Security.h>
-#import "LUKeychainServices.h"
+#import "RFLKeychainServices.h"
 
-@implementation LUKeychainServices
+@implementation RFLKeychainServices
 
 + (instancetype)keychainServices {
-  return [[self alloc] init];
+  static RFLKeychainServices *sharedInstance = nil;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    sharedInstance = [[RFLKeychainServices alloc] initForSharedInstance];
+  });
+  return sharedInstance;
+}
+
+- (id)initForSharedInstance {
+  self = [super init];
+  if (self) {
+    _accessibilityState = RFLKeychainAccessAttrAccessibleAlways;
+  }
+  return self;
 }
 
 - (id)init {
-  self = [super init];
-  if (!self) return nil;
-
-  _accessibilityState = LUKeychainAccessAttrAccessibleWhenUnlocked;
-
-  return self;
+  NSAssert(NO, @"sharedInstanceを使ってください");
+  return nil;
 }
 
 - (BOOL)addData:(NSData *)data forKey:(NSString *)key error:(NSError **)error {
@@ -94,22 +103,22 @@
 
 - (CFTypeRef)accessibilityStateCFType {
   switch (self.accessibilityState) {
-    case LUKeychainAccessAttrAccessibleAfterFirstUnlock:
+    case RFLKeychainAccessAttrAccessibleAfterFirstUnlock:
       return kSecAttrAccessibleAfterFirstUnlock;
 
-    case LUKeychainAccessAttrAccessibleAfterFirstUnlockThisDeviceOnly:
+    case RFLKeychainAccessAttrAccessibleAfterFirstUnlockThisDeviceOnly:
       return kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly;
 
-    case LUKeychainAccessAttrAccessibleAlways:
+    case RFLKeychainAccessAttrAccessibleAlways:
       return kSecAttrAccessibleAlways;
 
-    case LUKeychainAccessAttrAccessibleAlwaysThisDeviceOnly:
+    case RFLKeychainAccessAttrAccessibleAlwaysThisDeviceOnly:
       return kSecAttrAccessibleAlwaysThisDeviceOnly;
 
-    case LUKeychainAccessAttrAccessibleWhenUnlocked:
+    case RFLKeychainAccessAttrAccessibleWhenUnlocked:
       return kSecAttrAccessibleWhenUnlocked;
 
-    case LUKeychainAccessAttrAccessibleWhenUnlockedThisDeviceOnly:
+    case RFLKeychainAccessAttrAccessibleWhenUnlockedThisDeviceOnly:
       return kSecAttrAccessibleWhenUnlockedThisDeviceOnly;
 
     default:

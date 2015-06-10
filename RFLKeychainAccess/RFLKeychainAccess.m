@@ -1,29 +1,38 @@
-#import "LUKeychainAccess.h"
-#import "LUKeychainServices.h"
+#import "RFLKeychainAccess.h"
+#import "RFLKeychainServices.h"
 
-NSString *LUKeychainAccessErrorDomain = @"LUKeychainAccessErrorDomain";
+NSString *RFLKeychainAccessErrorDomain = @"RFLKeychainAccessErrorDomain";
 
-@interface LUKeychainAccess ()
+@interface RFLKeychainAccess ()
 
-@property (nonatomic, strong) LUKeychainServices *keychainServices;
+@property (nonatomic, strong) RFLKeychainServices *keychainServices;
 
 @end
 
-@implementation LUKeychainAccess
+@implementation RFLKeychainAccess
 
 #pragma mark - Public Methods
 
-+ (LUKeychainAccess *)standardKeychainAccess {
-  return [[self alloc] init];
++ (RFLKeychainAccess *)standardKeychainAccess {
+  static RFLKeychainAccess *sharedInstance = nil;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    sharedInstance = [[RFLKeychainAccess alloc] initForSharedInstance];
+  });
+  return sharedInstance;
+}
+
+- (id)initForSharedInstance {
+  self = [super init];
+  if (self) {
+    _keychainServices = [RFLKeychainServices keychainServices];
+  }
+  return self;
 }
 
 - (id)init {
-  self = [super init];
-  if (!self) return nil;
-
-  _keychainServices = [LUKeychainServices keychainServices];
-
-  return self;
+  NSAssert(NO, @"sharedInstanceを使ってください");
+  return nil;
 }
 
 - (BOOL)deleteAll {
@@ -40,11 +49,11 @@ NSString *LUKeychainAccessErrorDomain = @"LUKeychainAccessErrorDomain";
 
 #pragma mark - Properties
 
-- (LUKeychainAccessAccessibility)accessibilityState {
+- (RFLKeychainAccessAccessibility)accessibilityState {
   return self.keychainServices.accessibilityState;
 }
 
-- (void)setAccessibilityState:(LUKeychainAccessAccessibility)accessibilityState {
+- (void)setAccessibilityState:(RFLKeychainAccessAccessibility)accessibilityState {
   self.keychainServices.accessibilityState = accessibilityState;
 }
 
@@ -103,8 +112,8 @@ NSString *LUKeychainAccessErrorDomain = @"LUKeychainAccessErrorDomain";
     }
   } @catch (NSException *e) {
     NSString *errorMessage = [NSString stringWithFormat:@"Error while calling objectForKey: with key %@: %@", key, [e description]];
-    NSError *error = [NSError errorWithDomain:LUKeychainAccessErrorDomain
-                                         code:LUKeychainAccessInvalidArchiveError
+    NSError *error = [NSError errorWithDomain:RFLKeychainAccessErrorDomain
+                                         code:RFLKeychainAccessInvalidArchiveError
                                      userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
     [self handleError:error];
   }

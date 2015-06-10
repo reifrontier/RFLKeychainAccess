@@ -13,37 +13,38 @@
 		0226877416BADA41008FC8FA /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0226877316BADA41008FC8FA /* libPods-test.a */; };
 		02757704180892C1008B3C12 /* LUKeychainServicesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 02757702180892B1008B3C12 /* LUKeychainServicesSpec.m */; };
 		02ABC53418087D9100A13931 /* LUTestErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 02ABC53318087D9100A13931 /* LUTestErrorHandler.m */; };
-		F8120D2C1B065C32004EBEF3 /* LUKeychainAccessAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = F8120D2B1B065C32004EBEF3 /* LUKeychainAccessAccessibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8B3FC251B027D4A008AF919 /* LUKeychainAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 0226874A16BAD892008FC8FA /* LUKeychainAccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8B3FC261B027D52008AF919 /* LUKeychainAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 0226874C16BAD892008FC8FA /* LUKeychainAccess.m */; };
-		F8B3FC271B027D52008AF919 /* LUKeychainErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 02ABC53118087D0100A13931 /* LUKeychainErrorHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8B3FC281B027D52008AF919 /* LUKeychainServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 028CCA1F18084AAF00267911 /* LUKeychainServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8B3FC291B027D52008AF919 /* LUKeychainServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 028CCA2018084AAF00267911 /* LUKeychainServices.m */; };
-		F8B3FC2A1B027D6D008AF919 /* LUKeychainAccess-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 0226874916BAD892008FC8FA /* LUKeychainAccess-Prefix.pch */; };
-		F8B3FC2C1B027DE1008AF919 /* LUKeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B3FC0C1B027CBA008AF919 /* LUKeychainAccess.framework */; };
+		80E6CCE61B285EF8006A53FF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80E6CCDE1B285EF8006A53FF /* Info.plist */; };
+		80E6CCE71B285EF8006A53FF /* RFLKeychainAccess-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 80E6CCDF1B285EF8006A53FF /* RFLKeychainAccess-Prefix.pch */; };
+		80E6CCE81B285EF8006A53FF /* RFLKeychainAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E6CCE01B285EF8006A53FF /* RFLKeychainAccess.h */; };
+		80E6CCE91B285EF8006A53FF /* RFLKeychainAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6CCE11B285EF8006A53FF /* RFLKeychainAccess.m */; };
+		80E6CCEA1B285EF8006A53FF /* RFLKeychainAccessAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E6CCE21B285EF8006A53FF /* RFLKeychainAccessAccessibility.h */; };
+		80E6CCEB1B285EF8006A53FF /* RFLKeychainErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E6CCE31B285EF8006A53FF /* RFLKeychainErrorHandler.h */; };
+		80E6CCEC1B285EF8006A53FF /* RFLKeychainServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E6CCE41B285EF8006A53FF /* RFLKeychainServices.h */; };
+		80E6CCED1B285EF8006A53FF /* RFLKeychainServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6CCE51B285EF8006A53FF /* RFLKeychainServices.m */; };
+		F8B3FC2C1B027DE1008AF919 /* RFLKeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B3FC0C1B027CBA008AF919 /* RFLKeychainAccess.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0226874516BAD892008FC8FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0226874916BAD892008FC8FA /* LUKeychainAccess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LUKeychainAccess-Prefix.pch"; sourceTree = "<group>"; };
-		0226874A16BAD892008FC8FA /* LUKeychainAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUKeychainAccess.h; sourceTree = "<group>"; };
-		0226874C16BAD892008FC8FA /* LUKeychainAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUKeychainAccess.m; sourceTree = "<group>"; };
 		0226875316BAD892008FC8FA /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0226876E16BAD991008FC8FA /* LUKeychainAccessSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LUKeychainAccessSpec.m; sourceTree = "<group>"; };
 		0226877016BAD99F008FC8FA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0226877316BADA41008FC8FA /* libPods-test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-test.a"; path = "Pods/build/Release-iphoneos/libPods-test.a"; sourceTree = "<group>"; };
 		02757702180892B1008B3C12 /* LUKeychainServicesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LUKeychainServicesSpec.m; sourceTree = "<group>"; };
-		028CCA1F18084AAF00267911 /* LUKeychainServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUKeychainServices.h; sourceTree = "<group>"; };
-		028CCA2018084AAF00267911 /* LUKeychainServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LUKeychainServices.m; sourceTree = "<group>"; };
-		02ABC53118087D0100A13931 /* LUKeychainErrorHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUKeychainErrorHandler.h; sourceTree = "<group>"; };
 		02ABC53218087D9100A13931 /* LUTestErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUTestErrorHandler.h; sourceTree = "<group>"; };
 		02ABC53318087D9100A13931 /* LUTestErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LUTestErrorHandler.m; sourceTree = "<group>"; };
 		21D80151083ABFD1C71383C6 /* libPods-UnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		666BEC4EDA7D51370C0F76F5 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
+		80E6CCDE1B285EF8006A53FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E6CCDF1B285EF8006A53FF /* RFLKeychainAccess-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RFLKeychainAccess-Prefix.pch"; sourceTree = "<group>"; };
+		80E6CCE01B285EF8006A53FF /* RFLKeychainAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFLKeychainAccess.h; sourceTree = "<group>"; };
+		80E6CCE11B285EF8006A53FF /* RFLKeychainAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFLKeychainAccess.m; sourceTree = "<group>"; };
+		80E6CCE21B285EF8006A53FF /* RFLKeychainAccessAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFLKeychainAccessAccessibility.h; sourceTree = "<group>"; };
+		80E6CCE31B285EF8006A53FF /* RFLKeychainErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFLKeychainErrorHandler.h; sourceTree = "<group>"; };
+		80E6CCE41B285EF8006A53FF /* RFLKeychainServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFLKeychainServices.h; sourceTree = "<group>"; };
+		80E6CCE51B285EF8006A53FF /* RFLKeychainServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFLKeychainServices.m; sourceTree = "<group>"; };
 		F3AB6C26D5ACBCCA1BE08225 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
-		F8120D2B1B065C32004EBEF3 /* LUKeychainAccessAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUKeychainAccessAccessibility.h; sourceTree = "<group>"; };
-		F8B3FC0C1B027CBA008AF919 /* LUKeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LUKeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8B3FC2B1B027D9D008AF919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8B3FC0C1B027CBA008AF919 /* RFLKeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RFLKeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8B3FC2C1B027DE1008AF919 /* LUKeychainAccess.framework in Frameworks */,
+				F8B3FC2C1B027DE1008AF919 /* RFLKeychainAccess.framework in Frameworks */,
 				0226877416BADA41008FC8FA /* libPods-test.a in Frameworks */,
 				0226877216BAD9AC008FC8FA /* Security.framework in Frameworks */,
 				0226875816BAD892008FC8FA /* Foundation.framework in Frameworks */,
@@ -71,7 +72,7 @@
 		0226873916BAD892008FC8FA = {
 			isa = PBXGroup;
 			children = (
-				0226874716BAD892008FC8FA /* LUKeychainAccess */,
+				80E6CCDD1B285EF8006A53FF /* RFLKeychainAccess */,
 				0226876D16BAD991008FC8FA /* Unit Tests */,
 				0226874416BAD892008FC8FA /* Frameworks */,
 				0226874316BAD892008FC8FA /* Products */,
@@ -86,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				0226875316BAD892008FC8FA /* UnitTests.xctest */,
-				F8B3FC0C1B027CBA008AF919 /* LUKeychainAccess.framework */,
+				F8B3FC0C1B027CBA008AF919 /* RFLKeychainAccess.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,29 +101,6 @@
 				21D80151083ABFD1C71383C6 /* libPods-UnitTests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0226874716BAD892008FC8FA /* LUKeychainAccess */ = {
-			isa = PBXGroup;
-			children = (
-				0226874A16BAD892008FC8FA /* LUKeychainAccess.h */,
-				0226874C16BAD892008FC8FA /* LUKeychainAccess.m */,
-				028CCA1F18084AAF00267911 /* LUKeychainServices.h */,
-				028CCA2018084AAF00267911 /* LUKeychainServices.m */,
-				F8120D2B1B065C32004EBEF3 /* LUKeychainAccessAccessibility.h */,
-				02ABC53118087D0100A13931 /* LUKeychainErrorHandler.h */,
-				0226874816BAD892008FC8FA /* Supporting Files */,
-			);
-			path = LUKeychainAccess;
-			sourceTree = "<group>";
-		};
-		0226874816BAD892008FC8FA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F8B3FC2B1B027D9D008AF919 /* Info.plist */,
-				0226874916BAD892008FC8FA /* LUKeychainAccess-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0226876D16BAD991008FC8FA /* Unit Tests */ = {
@@ -146,6 +124,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		80E6CCDD1B285EF8006A53FF /* RFLKeychainAccess */ = {
+			isa = PBXGroup;
+			children = (
+				80E6CCDE1B285EF8006A53FF /* Info.plist */,
+				80E6CCDF1B285EF8006A53FF /* RFLKeychainAccess-Prefix.pch */,
+				80E6CCE01B285EF8006A53FF /* RFLKeychainAccess.h */,
+				80E6CCE11B285EF8006A53FF /* RFLKeychainAccess.m */,
+				80E6CCE21B285EF8006A53FF /* RFLKeychainAccessAccessibility.h */,
+				80E6CCE31B285EF8006A53FF /* RFLKeychainErrorHandler.h */,
+				80E6CCE41B285EF8006A53FF /* RFLKeychainServices.h */,
+				80E6CCE51B285EF8006A53FF /* RFLKeychainServices.m */,
+			);
+			path = RFLKeychainAccess;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -153,11 +146,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8B3FC281B027D52008AF919 /* LUKeychainServices.h in Headers */,
-				F8B3FC251B027D4A008AF919 /* LUKeychainAccess.h in Headers */,
-				F8120D2C1B065C32004EBEF3 /* LUKeychainAccessAccessibility.h in Headers */,
-				F8B3FC2A1B027D6D008AF919 /* LUKeychainAccess-Prefix.pch in Headers */,
-				F8B3FC271B027D52008AF919 /* LUKeychainErrorHandler.h in Headers */,
+				80E6CCEA1B285EF8006A53FF /* RFLKeychainAccessAccessibility.h in Headers */,
+				80E6CCE71B285EF8006A53FF /* RFLKeychainAccess-Prefix.pch in Headers */,
+				80E6CCEC1B285EF8006A53FF /* RFLKeychainServices.h in Headers */,
+				80E6CCE81B285EF8006A53FF /* RFLKeychainAccess.h in Headers */,
+				80E6CCEB1B285EF8006A53FF /* RFLKeychainErrorHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,9 +177,9 @@
 			productReference = 0226875316BAD892008FC8FA /* UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F8B3FC0B1B027CBA008AF919 /* LUKeychainAccess */ = {
+		F8B3FC0B1B027CBA008AF919 /* RFLKeychainAccess */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8B3FC1F1B027CBB008AF919 /* Build configuration list for PBXNativeTarget "LUKeychainAccess" */;
+			buildConfigurationList = F8B3FC1F1B027CBB008AF919 /* Build configuration list for PBXNativeTarget "RFLKeychainAccess" */;
 			buildPhases = (
 				F8B3FC071B027CBA008AF919 /* Sources */,
 				F8B3FC081B027CBA008AF919 /* Frameworks */,
@@ -197,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = LUKeychainAccess;
+			name = RFLKeychainAccess;
 			productName = LUKeychainAccess;
-			productReference = F8B3FC0C1B027CBA008AF919 /* LUKeychainAccess.framework */;
+			productReference = F8B3FC0C1B027CBA008AF919 /* RFLKeychainAccess.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8B3FC0B1B027CBA008AF919 /* LUKeychainAccess */,
+				F8B3FC0B1B027CBA008AF919 /* RFLKeychainAccess */,
 				0226875216BAD892008FC8FA /* UnitTests */,
 			);
 		};
@@ -247,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E6CCE61B285EF8006A53FF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,8 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8B3FC291B027D52008AF919 /* LUKeychainServices.m in Sources */,
-				F8B3FC261B027D52008AF919 /* LUKeychainAccess.m in Sources */,
+				80E6CCED1B285EF8006A53FF /* RFLKeychainServices.m in Sources */,
+				80E6CCE91B285EF8006A53FF /* RFLKeychainAccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +420,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = LUKeychainAccess/Info.plist;
+				INFOPLIST_FILE = RFLKeychainAccess/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -463,7 +457,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = LUKeychainAccess/Info.plist;
+				INFOPLIST_FILE = RFLKeychainAccess/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -497,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8B3FC1F1B027CBB008AF919 /* Build configuration list for PBXNativeTarget "LUKeychainAccess" */ = {
+		F8B3FC1F1B027CBB008AF919 /* Build configuration list for PBXNativeTarget "RFLKeychainAccess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8B3FC201B027CBB008AF919 /* Debug */,

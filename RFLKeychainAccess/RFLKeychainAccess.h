@@ -1,28 +1,28 @@
 #import <Foundation/Foundation.h>
-#import "LUKeychainErrorHandler.h"
-#import "LUKeychainServices.h"
-#import "LUKeychainAccessAccessibility.h"
+#import "RFLKeychainErrorHandler.h"
+#import "RFLKeychainServices.h"
+#import "RFLKeychainAccessAccessibility.h"
 
 //! Project version number for LUKeychainAccess.
-FOUNDATION_EXPORT double LUKeychainAccessVersionNumber;
+FOUNDATION_EXPORT double RFLKeychainAccessVersionNumber;
 
 //! Project version string for LUKeychainAccess.
-FOUNDATION_EXPORT const unsigned char LUKeychainAccessVersionString[];
+FOUNDATION_EXPORT const unsigned char RFLKeychainAccessVersionString[];
 
-extern NSString *LUKeychainAccessErrorDomain;
+extern NSString *RFLKeychainAccessErrorDomain;
 
-typedef NS_ENUM(NSInteger, LUKeychainAccessError) {
-  LUKeychainAccessInvalidArchiveError
+typedef NS_ENUM(NSInteger, RFLKeychainAccessError) {
+  RFLKeychainAccessInvalidArchiveError
 };
 
-@interface LUKeychainAccess : NSObject
+@interface RFLKeychainAccess : NSObject
 
-@property (nonatomic, assign) LUKeychainAccessAccessibility accessibilityState;
-@property (nonatomic, strong) id<LUKeychainErrorHandler> errorHandler;
+@property (nonatomic, assign) RFLKeychainAccessAccessibility accessibilityState;
+@property (nonatomic, strong) id<RFLKeychainErrorHandler> errorHandler;
 @property (nonatomic, assign) NSString *service;
 
 // Public Methods
-+ (LUKeychainAccess *)standardKeychainAccess;
++ (RFLKeychainAccess *)standardKeychainAccess;
 - (BOOL)deleteAll;
 
 // Getters

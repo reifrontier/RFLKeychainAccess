@@ -1,11 +1,11 @@
 // A wrapper for Keychain Services using the Facade pattern: http://en.wikipedia.org/wiki/Facade_pattern
 
 #import <Foundation/Foundation.h>
-#import "LUKeychainAccessAccessibility.h"
+#import "RFLKeychainAccessAccessibility.h"
 
-@interface LUKeychainServices : NSObject
+@interface RFLKeychainServices : NSObject
 
-@property (nonatomic, assign) LUKeychainAccessAccessibility accessibilityState;
+@property (nonatomic, assign) RFLKeychainAccessAccessibility accessibilityState;
 @property (nonatomic, copy) NSString *service;
 
 + (instancetype)keychainServices;
